@@ -5,3 +5,12 @@
 	program = gpg2
 [init]
 	defaultBranch = main
+[alias]
+    s = status
+    co = checkout
+    ac = !git add -A && git commit -m
+    undo = reset HEAD~1 --mixed
+    res = !git reset --hard
+    done = !git push origin HEAD
+    lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30A
+    del = branch -D
