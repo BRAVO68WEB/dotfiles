@@ -107,4 +107,15 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 
 export STARSHIP_CONFIG=~/.config/starship.toml
+export OPENSSL_CONF=/dev/null
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+# bun completions
+[ -s "/home/bravo68web/.bun/_bun" ] && source "/home/bravo68web/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/home/bravo68web/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export FLYCTL_INSTALL="/home/bravo68web/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
