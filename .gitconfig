@@ -1,7 +1,7 @@
 [user]
 	name = Jyotirmoy Bandyopadhyaya [Bravo68]
 	email = jbandyopadhayaya@gmail.com
-	signingkey = F5671FD7BCB9917A
+	signingkey = 1362E76AACB9E70C
 [gpg]
 	program = /usr/bin/gpg
 [init]
