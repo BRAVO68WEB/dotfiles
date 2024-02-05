@@ -26,3 +26,14 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 . "$HOME/.cargo/env"
+
+export GPG_TTY=$(tty)
+export EDITOR=/usr/bin/micro
+export BROWSER=firefox
+export TERM=gnome-terminal
+export MAIL=thunderbird
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${>
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_c>
