@@ -108,6 +108,9 @@ alias ip="ip -color"
 alias cat='bat --style header --style snip --style changes --style header'
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 
+alias pftp="python3 -m http.server"
+alias pvenv="python -m venv venv && source venv/bin/activate.fish"
+
 # Common use
 alias grubup="sudo update-grub"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
@@ -155,6 +158,12 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 
 ## Run fastfetch if session is interactive
-if status --is-interactive && type -q fastfetch
-   fastfetch --load-config neofetch
+if status --is-interactive && type -q neofetch
+  neofetch
 end
+
+source /opt/asdf-vm/asdf.fish
+set GITLAB_HOST "https://git.b68.dev"
+#source /home/bravo68web/.ghcup/env
+export PATH="/home/bravo68web/.ghcup/bin:$PATH"
+export PATH="$HOME/.cabal/bin:$PATH"
