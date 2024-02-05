@@ -1,14 +1,15 @@
 [user]
 	name = Jyotirmoy Bandyopadhyaya [Bravo68]
 	email = jbandyopadhayaya@gmail.com
-	signingkey = 1362E76AACB9E70C
+	signingkey = D003E1D00F8A594589A7A674F5671FD7BCB9917A
 [gpg]
-	program = /usr/bin/gpg
+	program = gpg2
 [init]
 	defaultBranch = main
 [alias]
     s = status
     co = checkout
+    c = commit -m
     ac = !git add -A && git commit -m
     ao = remote add origin
     undo = reset HEAD~1 --mixed
@@ -25,3 +26,23 @@
 	required = true
 [commit]
 	gpgsign = true
+[safe]
+	directory = /opt/flutter
+[http]
+	cookiefile = /home/bravo68web/.gitcookies
+
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
